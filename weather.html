@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="weather.css">
+
+</head>
+<body>
+  <div class="container">
+    <!-- Left Panel -->
+    <div class="left-panel">
+      <h2>Weather Dashboard</h2>
+      <div id="timings"></div>
+      <p id="morning">Good Morning</p>
+      <div class="search-box">
+        <input type="text" id="city" placeholder="Enter city...">
+        <button onclick="getWeather()">Search</button>
+      </div>
+      
+      <!-- Main Weather -->
+      <div id="weatherResult" class="weather-card">
+        <i class="fa-solid fa-poo-storm"></i>
+        <h3>City Name</h3>
+        <h1>--°C</h1>
+        <p>Weather info will appear here</p>
+      </div>
+      <!-- Forecast Cards -->
+      <div class="forecast">
+        <div class="forecast-card">Mon<br>☀️<br>25°C</div>
+        <div class="forecast-card">Tue<br>🌧️<br>22°C</div>
+        <div class="forecast-card">Wed<br>⛅<br>28°C</div>
+        <div class="forecast-card">Thu<br>☁️<br>20°C</div>
+        <div class="forecast-card">Fri<br>🌩️<br>18°C</div>
+      </div>
+    </div>
+
+    <!-- Right Panel -->
+    <div class="right-panel">
+      <div class="info-box">
+        <h3>Air Quality Index</h3>
+        <p>Good 🌿</p>
+      </div>
+      <div class="info-box">
+        <h3 id="city2">City Name</h3>
+        <h3>Sunrise & Sunset</h3>
+        <p>Sunrise: 6:00 AM</p>
+        <p>🌇 Sunset: 6:45 PM</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="weather.js"></script>
+</body>
+</html>

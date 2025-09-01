@@ -1,0 +1,135 @@
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #f3f6fd;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+      width: 90%;
+      max-width: 1200px;
+    }
+
+    .left-panel, .right-panel {
+      background: #fff;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      color: #333;
+      text-align: center;
+    }
+
+    .search-box {
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    .search-box input {
+      flex: 1;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 10px 0 0 10px;
+      outline: none;
+    }
+
+    .search-box button {
+      padding: 12px 20px;
+      background: #4e73df;
+      color: #fff;
+      border: none;
+      border-radius: 0 10px 10px 0;
+      cursor: pointer;
+    }
+
+    .weather-card {
+      background: linear-gradient(135deg, #6e8efb, #a777e3);
+      color: #fff;
+      border-radius: 20px;
+      padding: 30px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .weather-card h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .weather-card h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .weather-details {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+    }
+
+    .forecast {
+      display: grid;
+      grid-template-columns: repeat(5,1fr);
+      gap: 10px;
+    }
+
+    .forecast-card {
+      background: #f7f9ff;
+      border-radius: 15px;
+      padding: 15px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .forecast-card img {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 8px;
+    }
+
+    .info-box {
+      margin-top: 20px;
+      background: #f7f9ff;
+      padding: 20px;
+      border-radius: 15px;
+    }
+
+    .fa-solid{
+      font-size: 80px;
+      padding: 10px;
+      margin: auto;
+    }
+    #timings{
+      padding: 20px;
+      font-size: 1.5rem;
+      color: #4e73df;
+    }
+    #morning{
+      font-size: 1.5rem;
+      color: #4e73df;
+      margin: 0px 0 15px 15px;
+    }
+    .fa-sun-bright{
+      background-color: #a777e3;
+      width: 100px;
+      font-size: 80px;
+      padding: 10px;
+      margin: auto;
+      height: 200px;
+    }
